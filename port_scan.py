@@ -6,12 +6,16 @@ import time
 from queue import Queue
 from queue import Empty
 
-usage ="Usage python scan.py <host> <start_port> <end_port> or python scan.py <host> <port1> <port2> ..."
+usage ="Usage => python scan.py <host> <start_port> <end_port> or python scan.py <host> <port1> <port2> ..."
 
-print("-"*50)
-print("Simple Port Scanner")
-print("-"*50)
+def display_banner():
+    print("-" * 50)
+    print("        © 2025 Dhananjay Chaudhari")
+    print("         🚀 Port Scanner 🚀")
+    print("-" * 50)
 
+if __name__ == "__main__":
+    display_banner()
 start_time = time.time()
 
 if(len(sys.argv)<3):
